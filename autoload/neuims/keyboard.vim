@@ -15,11 +15,11 @@ function! neuims#keyboard#Enable(im_name) abort
   "   return
   " endif
 
-  if has('unix')
-    call s:UnixEnable(l:im_id)
-  elseif has('win32')
+  " if has('unix')
+  "   call s:UnixEnable(l:im_id)
+  " elseif has('win32')
     call s:WinEnable(l:im_id)
-  endif
+  " endif
 
   let g:neuims.im = a:im_name
 
